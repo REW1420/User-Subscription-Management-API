@@ -102,6 +102,8 @@ mvn spring-boot:run
 
 ## 📂 Project Structure
 
+```bash
+
 src/
 ├── main/java/com/example/usermanagement
 │ ├── controller/ # REST Controllers: Expose the API endpoints
@@ -114,6 +116,7 @@ src/
 ├── PlanControllerTest.java # Test for Plan controller
 ├── SubscriptionControllerTest.java # Test for Subscription controller
 └── UserControllerTest.java # Test for User controller
+```
 
 ## 🧑‍💻 Author
 
