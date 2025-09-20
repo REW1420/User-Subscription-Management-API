@@ -32,13 +32,14 @@
 
 1. **Clone the repository**
 
-````bash
+```bash
 git clone https://github.com/REW1420/User-Subscription-Management-API.git
 ```
 
 ```bash
 cd User-Subscription-Management-API
 ```
+
 2. **Build the project**
 
 ```bash
@@ -48,17 +49,15 @@ mvn clean install
 - Or Grandle
 
 ```bash
-
 ./gradlew build
 ```
 
 3. **Run the application**
 
 ```bash
-
 mvn spring-boot:run
-
 ```
+
 4. **Access the application**
 
 - Swagger UI: http://localhost:8080/swagger-ui.html
@@ -68,6 +67,7 @@ mvn spring-boot:run
 ##🔧 API Endpoints
 
 ## User
+
 | Método | Endpoint          | Descripción                |
 | ------ | ----------------- | -------------------------- |
 | GET    | `/api/users`      | Obtener todos los usuarios |
@@ -94,31 +94,27 @@ mvn spring-boot:run
 | PUT    | `/api/subscriptions/{id}`           | Actualizar suscripción            |
 | DELETE | `/api/subscriptions/{id}`           | Eliminar suscripción              |
 
-
 ## 🧪 Running Tests
 
 ```bash
-
 ./mvnw test
-
 ```
 
 ## 📂 Project Structure
 
 src/
 ├── main/java/com/example/usermanagement
-│    ├── controller/      # REST Controllers: Expose the API endpoints
-│    ├── dto/             # Data Transfer Objects: Represent input and output data
-│    ├── entity/          # JPA Entities: Map the database tables
-│    ├── exception/       # Custom exception classes
-│    ├── repository/      # JPA Repositories: Database access layer
-│    └── service/         # Business logic
+│ ├── controller/ # REST Controllers: Expose the API endpoints
+│ ├── dto/ # Data Transfer Objects: Represent input and output data
+│ ├── entity/ # JPA Entities: Map the database tables
+│ ├── exception/ # Custom exception classes
+│ ├── repository/ # JPA Repositories: Database access layer
+│ └── service/ # Business logic
 └── test/java/com/example/usermanagement
-     ├── PlanControllerTest.java            # Test for Plan controller
-     ├── SubscriptionControllerTest.java    # Test for Subscription controller
-     └── UserControllerTest.java            # Test for User controller
+├── PlanControllerTest.java # Test for Plan controller
+├── SubscriptionControllerTest.java # Test for Subscription controller
+└── UserControllerTest.java # Test for User controller
 
 ## 🧑‍💻 Author
-Created by William Ernesto Ramos Valladares
 
-````
+Created by William Ernesto Ramos Valladares
