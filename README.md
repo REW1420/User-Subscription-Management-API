@@ -97,7 +97,7 @@ mvn spring-boot:run
 ## 🧪 Running Tests
 
 ```bash
-./mvnw test
+mvn test
 ```
 
 ## 📂 Project Structure
