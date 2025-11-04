@@ -4,7 +4,8 @@ import com.example.usermanagement.dto.AuthRequest;
 import com.example.usermanagement.dto.AuthResponse;
 import com.example.usermanagement.entity.User;
 import com.example.usermanagement.repository.UserRepository;
-import com.example.usermanagement.config.JwtUtil;
+import com.example.usermanagement.config.JwtService;
+import com.example.usermanagement.config.JwtService;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,13 +19,13 @@ public class AuthService {
 
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
-    private final JwtUtil jwtUtil;
+    private final JwtService jwtUtil;
     private final PasswordEncoder passwordEncoder;
 
     public AuthService(
             AuthenticationManager authenticationManager,
             UserRepository userRepository,
-            JwtUtil jwtUtil,
+            JwtService jwtUtil,
             PasswordEncoder passwordEncoder) {
         this.authenticationManager = authenticationManager;
         this.userRepository = userRepository;
